@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+html, body, #root {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dash-line {
+  height: inherit;
+  width: 50px;
+  background-color: #2b2f42;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.widgets-board {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 340px;
+  height: inherit;
+  padding: 24px 20px 20px 19px;
+  opacity: 0.8;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: #edf0f5;
 }
 
-.App-link {
-  color: #61dafb;
+.widget {
+  margin: auto;
+  width: 300px;
+  margin: 24px 0 10px 1px;
+  padding: 13px 20px 25px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #edeff5;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.collapsed {
+  display: none;
+}
+.collapse-button {
+  height: 100px;
+}
+@media (max-width: 900px) {
+  .app {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .dash-line {
+    height: 50px;
+    width: 100%
   }
 }

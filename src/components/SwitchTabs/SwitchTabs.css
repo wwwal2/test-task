@@ -1,0 +1,21 @@
+.switch-tabs-container {
+}
+
+.switch-btn {
+  height: 24px;
+  background-color: #ffffff;
+  padding: 5px 17px;
+  border-radius: 4px;
+  border: solid 1px #acaebf;
+
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 12px;
+  color: #acaebf;
+  text-transform: capitalize;
+}
+
+.active-btn {
+  background-color: #acaebf;
+  color: #ffffff;
+}
